@@ -1,4 +1,4 @@
-package com.example.lab02;
+package com.example.profile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.m001_act_splash);
+        setContentView(R.layout.profile);
     }
 }
