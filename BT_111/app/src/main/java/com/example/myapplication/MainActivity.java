@@ -38,10 +38,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public class DownloadImage extends AsyncTask {
+    public class DownloadImage extends AsyncTask<String, Void, Bitmap> {
         @Override
-        protected Object doInBackground(Object[] URL) {
-            String imageURL = (String)URL[0];
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mProgressDialog = new ProgressDialog(MainActivity.this);
+            mProgressDialog.setTitle("Download Image Tutorial");
+            mProgressDialog.setMessage("Loading...");
+            mProgressDialog.setIndeterminate(false);
+            mProgressDialog.show();
+        }
+
+        @Override
+        protected Bitmap doInBackground(String... URL) {
+            String imageURL = URL[0];
             Bitmap bitmap = null;
             try {
                 // Download Image from URL
@@ -55,20 +65,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            mProgressDialog = new ProgressDialog(MainActivity.this);
-            mProgressDialog.setTitle("Download Image Tutorial");
-            mProgressDialog.setMessage("Loading...");
-            mProgressDialog.setIndeterminate(false);
-            mProgressDialog.show();
-        }
-
-        @Override
-        protected void onPostExecute(Object result) {
+        protected void onPostExecute(Bitmap result) {
             // Set the bitmap into ImageView
 
-            image.setImageBitmap((Bitmap) result);
+            image.setImageBitmap(result);
             // Close progressdialog
             mProgressDialog.dismiss();
         }
