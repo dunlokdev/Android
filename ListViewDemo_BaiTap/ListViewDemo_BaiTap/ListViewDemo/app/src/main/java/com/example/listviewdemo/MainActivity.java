@@ -2,16 +2,19 @@ package com.example.listviewdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,13 +38,24 @@ public class MainActivity extends AppCompatActivity {
         productListListViewAdapter = new ProductListListViewAdapter(listProduct);
         listViewProduct = findViewById(R.id.listviewMain);
         listViewProduct.setAdapter(productListListViewAdapter);
+
+        listViewProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("Data", listProduct.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 
 
 }
 
 /*Model phan tu du lieu*/
-class Product {
+class Product implements Serializable {
     String name;
     String content;
     int idImage;
@@ -79,6 +93,7 @@ class ProductListListViewAdapter extends BaseAdapter {
     @Override
     public View getView(int positon, View convertView, ViewGroup parent) {
         View viewProduct;
+
         if (convertView == null) {
             viewProduct = View.inflate(parent.getContext(), R.layout.mylist, null);
         } else viewProduct = convertView;

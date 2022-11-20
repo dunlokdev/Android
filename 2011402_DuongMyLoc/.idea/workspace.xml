@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8f3e2be-b9eb-400f-af6b-02d9b0455c0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/aud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/cad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/eur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/gbp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/home_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/inr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/jpy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/nzd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/top_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/usd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/vnd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/ConvertCurrency/app/src/main/res/drawable-v24/zar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/java/com/example/myapplication/AdapterProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/java/com/example/myapplication/MainActivity2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/java/com/example/myapplication/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/res/drawable-v24/android.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/res/drawable-v24/asus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/res/drawable-v24/ios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/res/drawable-v24/winphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab06/OnTapGK/app/src/main/res/layout/product_item_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListViewDemo_BaiTap/ListViewDemo_BaiTap/ListViewDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListViewDemo_BaiTap/ListViewDemo_BaiTap/ListViewDemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListViewDemo_BaiTap/ListViewDemo_BaiTap/ListViewDemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListViewDemo_BaiTap/ListViewDemo_BaiTap/ListViewDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListViewDemo_BaiTap/ListViewDemo_BaiTap/ListViewDemo/app/src/main/java/com/example/listviewdemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ListViewDemo_BaiTap/ListViewDemo_BaiTap/ListViewDemo/app/src/main/java/com/example/listviewdemo/MainActivity.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2HiClxaO6g8CgS1DtNxSZDSOCpV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8f3e2be-b9eb-400f-af6b-02d9b0455c0b" name="Changes" comment="" />
+      <created>1668758673867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668758673867</updated>
+    </task>
+    <servers />
+  </component>
+</project>
