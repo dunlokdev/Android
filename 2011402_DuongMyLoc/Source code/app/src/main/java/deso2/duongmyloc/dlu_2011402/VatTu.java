@@ -1,23 +1,34 @@
 package deso2.duongmyloc.dlu_2011402;
 
+import android.net.Uri;
+
 import java.io.Serializable;
 import java.text.NumberFormat;
 import java.util.Currency;
 import java.util.Locale;
 
 public class VatTu implements Serializable {
-    private String maVatTu;
+    private int maVatTu;
     private String tenVatTu;
     private String donViTinh;
     private double donGia;
-    private  int idHinh;
+    private int idHinh;
+    private Uri uriHinh;
 
-    public VatTu(String maVatTu, String tenVatTu, String donViTinh, double donGia, int idHinh) {
+    public VatTu(int maVatTu, String tenVatTu, String donViTinh, double donGia, int idHinh) {
         this.maVatTu = maVatTu;
         this.tenVatTu = tenVatTu;
         this.donViTinh = donViTinh;
         this.donGia = donGia;
         this.idHinh = idHinh;
+    }
+
+    public VatTu(int maVatTu, String tenVatTu, String donViTinh, double donGia, Uri uriHinh) {
+        this.maVatTu = maVatTu;
+        this.tenVatTu = tenVatTu;
+        this.donViTinh = donViTinh;
+        this.donGia = donGia;
+        this.uriHinh = uriHinh;
     }
 
     public String Format(double currencyAmount) {
@@ -29,12 +40,13 @@ public class VatTu implements Serializable {
         NumberFormat vietnamFormat = NumberFormat.getCurrencyInstance(vnd);
         return vietnamFormat.format(currencyAmount);
     }
+
     // Getter & Setter
-    public String getMaVatTu() {
+    public int getMaVatTu() {
         return maVatTu;
     }
 
-    public void setMaVatTu(String maVatTu) {
+    public void setMaVatTu(int maVatTu) {
         this.maVatTu = maVatTu;
     }
 
@@ -58,10 +70,12 @@ public class VatTu implements Serializable {
 
         return Format(donGia);
     }
+
     public double getDonGia() {
 
         return donGia;
     }
+
     public void setDonGia(double donGia) {
         this.donGia = donGia;
     }
@@ -72,5 +86,13 @@ public class VatTu implements Serializable {
 
     public void setIdHinh(int idHinh) {
         this.idHinh = idHinh;
+    }
+
+    public Uri getUriHinh() {
+        return uriHinh;
+    }
+
+    public void setUriHinh(Uri uriHinh) {
+        this.uriHinh = uriHinh;
     }
 }

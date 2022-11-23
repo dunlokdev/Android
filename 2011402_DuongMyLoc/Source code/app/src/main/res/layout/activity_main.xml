@@ -11,6 +11,7 @@
         android:id="@+id/lvMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         app:layout_anchor="@+id/lvMain"
         app:layout_anchorGravity="center" />
 
@@ -18,9 +19,9 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
+        android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/teal_700"
-        android:contentDescription="Thêm mới"
-        android:src="@drawable/ic_add" />
+        android:backgroundTint="@color/primary_color"
+        app:tint="@color/white"
+        app:srcCompat="@drawable/ic_add"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

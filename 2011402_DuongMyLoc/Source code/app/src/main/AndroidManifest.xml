@@ -14,10 +14,10 @@
         android:theme="@style/Theme.2011402_DuongMyLoc"
         tools:targetApi="31">
         <activity
-            android:name=".AddNewVatTu"
+            android:name=".AddNewVatTuActivity"
             android:exported="false" />
         <activity
-            android:name=".EditVatTu"
+            android:name=".EditVatTuActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

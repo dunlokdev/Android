@@ -6,10 +6,12 @@
         <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/drawable/ic_edit.xml" value="0.1" />
         <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/activity_add_new_vat_tu.xml" value="0.21944444444444444" />
+        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/activity_add_vat_tu.xml" value="0.25" />
         <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/activity_edit_vat_tu.xml" value="0.25" />
-        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/edit_vat_tu.xml" value="0.1" />
-        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/vat_tu_item.xml" value="0.2" />
+        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/activity_vat_tu_row.xml" value="0.264" />
+        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/edit_vat_tu.xml" value="0.264" />
+        <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/Source code/app/src/main/res/layout/vat_tu_item.xml" value="0.1" />
         <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/app/src/main/res/layout/activity_edit_vat_tu.xml" value="0.25" />
         <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Workspace/Dev/Android/2011402_DuongMyLoc/app/src/main/res/layout/edit_vat_tu.xml" value="0.1" />

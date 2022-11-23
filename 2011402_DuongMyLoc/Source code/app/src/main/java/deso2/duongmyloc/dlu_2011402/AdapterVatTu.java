@@ -1,5 +1,6 @@
 package deso2.duongmyloc.dlu_2011402;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +11,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +19,6 @@ public class AdapterVatTu extends BaseAdapter {
     private Context context;
     private int layout;
     private List<VatTu> listVatTu = new ArrayList<VatTu>();
-    final int REQUEST_CODE_EDIT = 1;
 
     public AdapterVatTu(Context context, int layout, List<VatTu> listVatTu) {
         this.context = context;
@@ -50,30 +48,32 @@ public class AdapterVatTu extends BaseAdapter {
         // layout: chính là item list view custom
         view = inflater.inflate(layout, null);
 
-        // Ánh xạ view
+        // Mapping view
         ImageView imgHinh = view.findViewById(R.id.imgVatTu);
         TextView txtTenVatTu = view.findViewById(R.id.txtTenVatTu);
         TextView txtGiaVatTu = view.findViewById(R.id.txtGia);
-        ImageView imgEdit = view.findViewById(R.id.imgEdit);
+        ImageView btnEdit = view.findViewById(R.id.imgEdit);
 
+        // Get item VatTu in List by index
         VatTu vatTu = listVatTu.get(i);
         String gia = vatTu.getDonGiaFormat() + "/" +  vatTu.getDonViTinh();
 
         // Gán giá trị
-        imgHinh.setImageResource(vatTu.getIdHinh());
+        if (vatTu.getUriHinh() != null) {
+            imgHinh.setImageURI(vatTu.getUriHinh());
+        } else {
+            imgHinh.setImageResource(vatTu.getIdHinh());
+        }
         txtTenVatTu.setText(String.format(vatTu.getTenVatTu()));
         txtGiaVatTu.setText(String.format(gia));
 
-        imgEdit.setOnClickListener(new View.OnClickListener() {
+        // TODO: HANDLE EVENT ON CLICK BUTTON EDIT
+        btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(viewGroup.getContext(),EditVatTu.class);
-
-                Bundle bundle = new Bundle();
-                VatTu vt = listVatTu.get(i);
-                bundle.putSerializable("Data", vt);
-                intent.putExtras(bundle);
-                ((MainActivity)viewGroup.getContext()).startActivityForResult(intent, REQUEST_CODE_EDIT);
+                Intent intent = new Intent(viewGroup.getContext(), EditVatTuActivity.class);
+                intent.putExtra("ID", vatTu.getMaVatTu());
+                ((MainActivity)viewGroup.getContext()).startActivityForResult(intent, Values.EDIT_DELETE_CODE);
             }
         });
         return view;
